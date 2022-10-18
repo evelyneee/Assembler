@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9EF1DA9C28FB684A00C4C904 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1DA9B28FB684A00C4C904 /* main.swift */; };
+		9EF1DAA528FB685900C4C904 /* Assembly.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1DAA428FB685900C4C904 /* Assembly.c */; };
+		9EF1DAA728FC601300C4C904 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1DAA628FC601300C4C904 /* Assembler.swift */; };
+		9EF1DAA928FC743B00C4C904 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1DAA828FC743B00C4C904 /* Register.swift */; };
+		9EF1DAAB28FCDFDF00C4C904 /* exec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1DAAA28FCDFDF00C4C904 /* exec.swift */; };
+		9EF1DAAD28FE149E00C4C904 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1DAAC28FE149E00C4C904 /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9EF1DA9828FB684A00C4C904 /* InlineAssembly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InlineAssembly; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF1DA9828FB684A00C4C904 /* Assembler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assembler; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF1DA9B28FB684A00C4C904 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9EF1DAA228FB685800C4C904 /* Assembler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assembler-Bridging-Header.h"; sourceTree = "<group>"; };
+		9EF1DAA428FB685900C4C904 /* Assembly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Assembly.c; sourceTree = "<group>"; };
+		9EF1DAA628FC601300C4C904 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		9EF1DAA828FC743B00C4C904 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		9EF1DAAA28FCDFDF00C4C904 /* exec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exec.swift; sourceTree = "<group>"; };
+		9EF1DAAC28FE149E00C4C904 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +52,7 @@
 		9EF1DA8F28FB684A00C4C904 = {
 			isa = PBXGroup;
 			children = (
-				9EF1DA9A28FB684A00C4C904 /* InlineAssembly */,
+				9EF1DA9A28FB684A00C4C904 /* Assembler */,
 				9EF1DA9928FB684A00C4C904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +60,31 @@
 		9EF1DA9928FB684A00C4C904 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9EF1DA9828FB684A00C4C904 /* InlineAssembly */,
+				9EF1DA9828FB684A00C4C904 /* Assembler */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EF1DA9A28FB684A00C4C904 /* InlineAssembly */ = {
+		9EF1DA9A28FB684A00C4C904 /* Assembler */ = {
 			isa = PBXGroup;
 			children = (
 				9EF1DA9B28FB684A00C4C904 /* main.swift */,
+				9EF1DAA428FB685900C4C904 /* Assembly.c */,
+				9EF1DAA228FB685800C4C904 /* Assembler-Bridging-Header.h */,
+				9EF1DAA628FC601300C4C904 /* Assembler.swift */,
+				9EF1DAA828FC743B00C4C904 /* Register.swift */,
+				9EF1DAAA28FCDFDF00C4C904 /* exec.swift */,
+				9EF1DAAC28FE149E00C4C904 /* Math.swift */,
 			);
-			path = InlineAssembly;
+			path = Assembler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9EF1DA9728FB684A00C4C904 /* InlineAssembly */ = {
+		9EF1DA9728FB684A00C4C904 /* Assembler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9EF1DA9F28FB684A00C4C904 /* Build configuration list for PBXNativeTarget "InlineAssembly" */;
+			buildConfigurationList = 9EF1DA9F28FB684A00C4C904 /* Build configuration list for PBXNativeTarget "Assembler" */;
 			buildPhases = (
 				9EF1DA9428FB684A00C4C904 /* Sources */,
 				9EF1DA9528FB684A00C4C904 /* Frameworks */,
@@ -77,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = InlineAssembly;
+			name = Assembler;
 			productName = InlineAssembly;
-			productReference = 9EF1DA9828FB684A00C4C904 /* InlineAssembly */;
+			productReference = 9EF1DA9828FB684A00C4C904 /* Assembler */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -94,10 +111,11 @@
 				TargetAttributes = {
 					9EF1DA9728FB684A00C4C904 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
-			buildConfigurationList = 9EF1DA9328FB684A00C4C904 /* Build configuration list for PBXProject "InlineAssembly" */;
+			buildConfigurationList = 9EF1DA9328FB684A00C4C904 /* Build configuration list for PBXProject "Assembler" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9EF1DA9728FB684A00C4C904 /* InlineAssembly */,
+				9EF1DA9728FB684A00C4C904 /* Assembler */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +139,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF1DA9C28FB684A00C4C904 /* main.swift in Sources */,
+				9EF1DAA728FC601300C4C904 /* Assembler.swift in Sources */,
+				9EF1DAAB28FCDFDF00C4C904 /* exec.swift in Sources */,
+				9EF1DAA928FC743B00C4C904 /* Register.swift in Sources */,
+				9EF1DAA528FB685900C4C904 /* Assembly.c in Sources */,
+				9EF1DAAD28FE149E00C4C904 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +266,16 @@
 		9EF1DAA028FB684A00C4C904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assembler/Assembler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -252,8 +283,15 @@
 		9EF1DAA128FB684A00C4C904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assembler/Assembler-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -261,7 +299,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9EF1DA9328FB684A00C4C904 /* Build configuration list for PBXProject "InlineAssembly" */ = {
+		9EF1DA9328FB684A00C4C904 /* Build configuration list for PBXProject "Assembler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9EF1DA9D28FB684A00C4C904 /* Debug */,
@@ -270,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9EF1DA9F28FB684A00C4C904 /* Build configuration list for PBXNativeTarget "InlineAssembly" */ = {
+		9EF1DA9F28FB684A00C4C904 /* Build configuration list for PBXNativeTarget "Assembler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9EF1DAA028FB684A00C4C904 /* Debug */,
